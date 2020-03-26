@@ -9,7 +9,7 @@ const message = {
 		element.innerHTML = message;
 		callback();
 	}
-}
+};
 
 const ajax = {
 
@@ -24,7 +24,7 @@ const ajax = {
 		const myInit = {
 			method: 'POST',
 			body: params
-		}
+		};
 
 		const response = await fetch(url + '.php', myInit);
 
@@ -42,12 +42,12 @@ const ajax = {
 		if (notification) {
 			console.log(`URL: ${url}.php`)
 			console.log(`Parameters: ${parameters}`)
-			console.log('Two all: ' + url + '.php?' + parameters)
+			console.log('All two: ' + url + '.php?' + parameters)
 		}
 
 		const myInit = {
 			method: 'GET'
-		}
+		};
 
 		const response = await fetch(url + '.php?' + parameters, myInit);
 
@@ -61,5 +61,5 @@ const ajax = {
 
 	}
 
-}
+};
 
