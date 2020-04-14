@@ -63,3 +63,4 @@ const ajax = {
 
 };
 
+export { ajax, message };
